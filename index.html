@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Mi web</title>
+	<style> 
+		body{
+			font-family: 'Courier New', monospace;
+			font-size: 16px;
+			            text-align: Left;
+			            font-weight: 800;
+		}
+		
+		.inicio{
+			 font-family: "Times New Roman", serif;
+		}
+		header{
+			text-align: Center;
+			background-color: pink;
+			color: white;
+			padding: 20px; /* padding: Espacio interno de una etiqueta |
+			            padding: global
+			            padding: (top-bottom) (left-right)
+			            padding: top (left - right) bottom;
+			            padding: top right bottom left*/
+			            /* ubicaciones del paddding
+			                padding-top
+			                padding-bottom
+			                padding-left
+			                padding-right
+			            */
+						
+					border-radius: 70px;
+					/*border: 4px ridge black;
+					/*border: 5px solid gray;   border: Trabaja con el marco del contenedor/etiqueta  
+					            border: grosor tipo color;
+					            tipos de bordes:
+					            solid - linea continua
+					            dashed - linea discontinua
+					            dotted - puntos
+					            double - 2 lineas
+					            inset - sombra top
+					            outset - sombra bottom
+					            none - sin estilos*/
+					     
+					 
+					            margin: 70px; /* margin: espacio existente fuera de la etiqueta*/
+					            /*
+					            margin: global
+					            margin: (top-bottom) (left-right)
+					            margin: top (left - right) bottom;
+					            padding: top right bottom left
+					 
+					            ubicaciones del paddding
+					                margin-top
+					                margin-bottom
+					                margin-left
+					                margin-right
+					            */
+					        }
+							header nav a{
+								color: #FFDEFB;
+								text-decoration: none;
+								            margin: 20px;
+								
+							}
+					
+					
+			        
+			 
+			        /* Estilo para id */
+			        #Habilidades{
+			            text-align: center;
+			        }
+					.main-contenido{
+    margin: 30px;
+    text-align: center;
+}
+ 
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap; /* permitir que los elementos bajen a otra fila*/
+    gap:20px;
+    justify-content: space-around;
+}
+					
+			 
+			    </style>
+</head>
+ 
+<body>
+    <header>
+        <h1>My first website</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contenido</a>
+            <a href="#">Información</a>
+        </nav>
+    </header>
+    <main>
+		<!-- Inicio -->
+        <section class="inicio">
+            <h2>Bienvenidos a mi primer web site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi quo, dolorem odit
+                consequuntur placeat numquam, ducimus provident vitae deserunt, suscipit corrupti expedita adipisci cum
+                iure ad reprehenderit esse harum.</p>
+            <button type="button" class="btn btn-warning">Lorem</button>
+        </section>
+       <!-- Contenido -->
+        <section class="main-contenido">
+            <h2>Mis habilidades</h2>
+            <div class="contenedor-cards">
+				<div class="card" style="width: 14rem;">
+<img src="img/shuichi.png" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem;">
+                    <img src="img/pixel.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem;">
+                    <img src="img/nagito.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+ 
+            </div>
+        </section>
+ 
+        <!-- Información -->
+        <div class="container-md">
+            <h2>Información</h2>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombres: </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email: </label>
+                    <input type="email" class="form-control">
+                </div>
+ 
+                <div class="mb-3">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+               
+                <button type="button" class="btn btn-warning">Enviar</button>
+            </form>
+        </div>
+ 
+        <!-- Usamos un div como reemplazo de la etiqueta footer -->
+        <div class="footer">
+            <p>&copy; My first website</p>
+            <p>DestelloSismutol</p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+</html>
+ 
